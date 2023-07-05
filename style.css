@@ -1,4 +1,3 @@
-
 body {
   background-color: black;
   font-family: Courier, Bold;
@@ -30,6 +29,7 @@ footer {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center; /* Optional: Center-align the content inside the footer */
 }
 
 a {
