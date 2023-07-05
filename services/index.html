@@ -3,6 +3,16 @@
   <head>
     <title>foul</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var dropdown = document.getElementById("dropdown");
+        dropdown.addEventListener("click", function() {
+          var dropdownContent = document.getElementById("dropdown-content");
+          dropdown.classList.toggle("active");
+          dropdownContent.classList.toggle("active");
+        });
+      });
+    </script>
   </head>
   <body>
     <br><br><br><br><br><br><br>
@@ -54,7 +64,49 @@
                                                                                                                                                       </pre>
     </div>
     <center><h1>BrickSquad</h1></center>
-    <p> <a href="https://t.me/bsportal">Portal</a> - <a href="/services">Services</a> - <a href="https://t.me/poodle7">Purchase </a></p>
+    <p> <a href="https://t.me/bsportal">Portal</a> - <a href="#" style="color: white;">Services</a> - <a href="https://t.me/poodle7">Purchase </a></p>
+    <br><br>
+    <div class="container">
+      <div class="dropdown" id="dropdown">
+        <span>Services</span>
+        <span class="dropdown-arrow">&#9660;</span>
+          <div id="dropdown-content" class="dropdown-content">
+            <div>
+              <h3>IRLs:</h3>
+              <p>Kidnapping    - $5-12k</p>
+              <p>Shooting      - $3k</p>
+              <p>Armed Robbery - $3-7k</p>
+              <p>Jumping       - $1.2k</p>
+              <p>Beating       - $1k</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Swats:</h3>
+              <p>House          - $70</p>
+              <p>Schools        - $70-200</p>
+              <p>Neighbourhoods - $150</p>
+              <p>Celebrities    - $200</p>
+              <p>Airports       - $200</p>
+              <p>Airplanes      - $250</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Harassment:</h3>
+              <p>Escorts      - $50/day</p>
+              <p>Pizzas       - $25/day</p>
+              <p>Pest control - $25/day</p>
+              <p>Gas leaks    - $50/day</p>
+              <p>Firefighters - $50/day</p>
+              <p>Tow trucks   - $50/day</p>
+              <p>Locksmiths   - $25/day</p>
+              <p>Limos        - $25/day</p>
+              <p>Plumbers     - $25/day</p>
+              <p>CPS          - $50/day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <footer>
     <a href="https://t.me/poodle7">Poodle</a> - <a href="https://t.me/woofing">Virtual</a> - <a href="https://t.me/speeks">Tongue</a>

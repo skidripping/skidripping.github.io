@@ -1,6 +1,8 @@
+
 body {
   background-color: black;
   font-family: Courier, Bold;
+  color: white;
 }
 
 h1 {
@@ -25,11 +27,53 @@ p {
 footer {
   color: white;
   position: absolute;
-  bottom: 40;
-  margin-left: 41%;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 a {
   color: grey;
   text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+  min-width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+  background-color: gray;
+  color: black;
+}
+
+.dropdown .dropdown-arrow {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
 }
